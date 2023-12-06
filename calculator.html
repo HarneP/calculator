@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+
+   <style>
+    .container{
+        margin: 80px auto;
+        background-color: lightsteelblue;
+        padding-left: 30px;
+        height: 250px;
+        width: 200px;
+    }
+
+    #btn-size{
+        background-color: black;
+        color:yellow;
+        font-size:large;
+        padding-left: 20px;
+        
+      }
+      .answer{
+        border-color: black;
+        height:20px;        
+      }
+   </style>
+
+    </head>
+
+    <body>
+        <div class="container" id="cont">
+            <p></p>
+
+            <input type="text" id="answer">
+            <br>
+            <br>
+
+            <input id="btn-size" type="button" value="/"
+            onclick="divide()">
+            <input id="btn-size" type="button" value="x"
+            onclick="multiply()">
+            <input id="btn-size" type="button" value="-"
+            onclick="minus()">
+            <br>
+            <br>
+            <input id="btn-size" type="button" value="7"
+            onclick="seven()">
+            <input id="btn-size" type="button" value="8"
+            onclick="eight()">
+            <input id="btn-size" type="button" value="9"
+            onclick="nine()">
+            <br>
+            <br>
+            <input id="btn-size" type="button" value="4"
+            onclick="four()">
+            <input id="btn-size" type="button" value="5"
+            onclick="five()">
+            <input id="btn-size" type="button" value="6"
+            onclick="six()">
+            <br>
+            <br>
+            <input id="btn-size" type="button" value="1"
+            onclick="one()">
+            <input id="btn-size" type="button" value="2"
+            onclick="two()">
+            <input id="btn-size" type="button" value="3"
+            onclick="three()">
+            <br>
+            <br>
+            <input id="btn-size" type="button" value="+"
+            onclick="add()">
+            <input id="btn-size" type="button" value="0"
+            onclick="zero()">
+            <input id="btn-size" type="button" value="enter"
+            onclick="enter()">
+
+            <br><br>
+        </div>
+        <script>
+             function one(){
+            parseInt(document.getElementById("answer").value += "1");
+        }
+        function two(){
+        parseInt(document.getElementById("answer").value += "2");
+        }
+        function three(){
+            parseInt(document.getElementById("answer").value += "3");
+        }
+        function four(){
+        parseInt(document.getElementById("answer").value += "4");
+        }
+        function five(){
+            parseInt(document.getElementById("answer").value += "5");
+        }
+        function six(){
+        parseInt(document.getElementById("answer").value += "6");
+        }
+        function seven(){
+            parseInt(document.getElementById("answer").value += "7");
+        }
+        function eight(){
+        parseInt(document.getElementById("answer").value += "8");
+        }
+        function nine(){
+            parseInt(document.getElementById("answer").value += "9");
+        }
+        function add(){
+        parseInt(document.getElementById("answer").value += "+");
+        }
+        function divide(){
+            parseInt(document.getElementById("answer").value += "/");
+        }
+        
+        function multiply(){
+            parseInt(document.getElementById("answer").value += "*");
+        }
+        function minus(){
+        parseInt(document.getElementById("answer").value += "-");
+        }
+        function zero(){
+        parseInt(document.getElementById("answer").value += "0");
+        }
+
+        // function enter(){
+        //     var x = parseInt(document.getElementById("answer").value);
+        //     console.log(x)
+        // }
+        function enter(){
+            var result=innerHTML=eval(document.getElementById("answer").value);
+            documents.getElementById("answer").value=result;
+        }
+
+        </script>
+    </body>
+</html>
+
